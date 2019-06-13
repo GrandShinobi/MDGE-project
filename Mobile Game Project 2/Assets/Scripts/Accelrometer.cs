@@ -18,7 +18,7 @@ public class Accelrometer : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         UseAcclerometer(); //using acclerometer to tilt table
 
@@ -32,7 +32,7 @@ public class Accelrometer : MonoBehaviour
         float tiltX = Mathf.Clamp(tilt_force.x, -tiltSpeedLimit, tiltSpeedLimit); //limits the max tiltspeed in x coordinates;
         float tiltY = Mathf.Clamp(tilt_force.y, -tiltSpeedLimit, tiltSpeedLimit); //limits the max tiltspeed in y coordinates;
 
-        Debug.Log("Current Power " + transform.rotation.x * tiltSpeed);
+       // Debug.Log("Current Power " + transform.rotation.x * tiltSpeed);
        /* if ( transform.rotation.x >= tiltLimit )
         {
             tiltX= 0;
