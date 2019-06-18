@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Death : MonoBehaviour
 {
+    GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GetComponent<PlayerMaster>().player;
     }
 
     // Update is called once per frame
@@ -18,11 +19,19 @@ public class Death : MonoBehaviour
     
    void OnTriggerEnter( Collider collider)
     {
-        print("object collided");
-        if (collider.gameObject.tag == "Enemy")
+        
+        if (collider.gameObject.CompareTag("Enemy"))
         {
-            print("object collided");
-            this.gameObject.SetActive(false);
+            player.gameObject.SetActive(false);
+            print("object collided death is here");
+          
         }
+        if (collider.gameObject.CompareTag("Coins"))
+        {
+            
+            print("object collided Coin is here");
+
+        }
+
     }
 }
