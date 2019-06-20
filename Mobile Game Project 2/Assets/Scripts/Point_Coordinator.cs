@@ -7,7 +7,7 @@ using UnityEngine;
 public class Point_Coordinator : MonoBehaviour
 {
     //This script works in tandem with game manager so send scoring to the UI and keep track of coins on the field
-
+    
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI coinsUI;
     private int score = 0;

@@ -11,10 +11,19 @@ public class Accelrometer : MonoBehaviour
     public float tiltLimit = 2;
     public float tiltSpeed = 5;
 
+   
+
+    //Setting gyro 
+    private GameObject Setting;
+    public Setting_Menu isgyro;
     // Start is called before the first frame update
     void Start()
     {
-        rigid = GetComponent<Rigidbody>(); //for ball
+        if (isgyro.getGyro() == true)
+        {
+            print("Gyro is " + isgyro.getGyro());
+            rigid = GetComponent<Rigidbody>(); //for ball
+        }
     }
 
     // Update is called once per frame
