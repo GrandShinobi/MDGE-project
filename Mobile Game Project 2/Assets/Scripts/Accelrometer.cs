@@ -11,6 +11,7 @@ public class Accelrometer : MonoBehaviour
     public float tiltLimit = 2;
     public float tiltSpeed = 5;
 
+
    
 
     //Setting gyro 
@@ -24,6 +25,7 @@ public class Accelrometer : MonoBehaviour
             print("Gyro is " + isgyro.getGyro());
             rigid = GetComponent<Rigidbody>(); //for ball
         }
+
     }
 
     // Update is called once per frame
@@ -35,7 +37,9 @@ public class Accelrometer : MonoBehaviour
 
     public void UseAcclerometer()
     {
-        Vector3 tilt_force = Input.acceleration * speed; //using accleration input to measure tiltness in terms of tilt_force
+        if (new Vector2(Input.acceleration.x, Input.acceleration.z).magnitude > 0.1)
+        {
+            Vector3 tilt_force = Input.acceleration * speed; //using accleration input to measure tiltness in terms of tilt_force
 
 
         float tiltX = Mathf.Clamp(tilt_force.x, -tiltSpeedLimit, tiltSpeedLimit); //limits the max tiltspeed in x coordinates;
@@ -55,8 +59,8 @@ public class Accelrometer : MonoBehaviour
 
         // Dampen towards the target rotation
         transform.rotation = Quaternion.Slerp(transform.rotation, target,  tiltSpeed  );
-        // rigid.AddForce(tiltX * speed, 0,tiltY *speed); //at vector3 in terms of x y axis. because we dw up and down movement of the phone to affect coordinates, hence no z.
-        // transform.Rotate(tiltX, 0, tiltY);
-
+            // rigid.AddForce(tiltX * speed, 0,tiltY *speed); //at vector3 in terms of x y axis. because we dw up and down movement of the phone to affect coordinates, hence no z.
+            // transform.Rotate(tiltX, 0, tiltY);
+        }
     }
 }

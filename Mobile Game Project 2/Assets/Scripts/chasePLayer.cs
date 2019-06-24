@@ -17,6 +17,8 @@ public class chasePLayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         enemy.SetDestination(player.transform.position);
 
     }

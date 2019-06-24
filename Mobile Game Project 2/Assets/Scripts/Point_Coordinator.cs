@@ -10,6 +10,7 @@ public class Point_Coordinator : MonoBehaviour
     
     public TextMeshProUGUI scoreUI;
     public TextMeshProUGUI coinsUI;
+    public TextMeshProUGUI timerUI;
     private int score = 0;
     private int coins = 0;
     // Start is called before the first frame update
@@ -44,4 +45,9 @@ public void UpdateCoinsLeft()
 
         coinsUI.text = "Coins Left: " + coins.ToString();
     }
+    public void UpdateTime( float time)
+    {
+        timerUI.text = "Timer: " + System.Math.Round(time, 2).ToString() ;
+    }
+
 }
