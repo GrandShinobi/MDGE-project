@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 
-public class chasePLayer : MonoBehaviour
+public class ChasePlayer : MonoBehaviour
 {
    private NavMeshAgent enemy;
    public GameObject player;
