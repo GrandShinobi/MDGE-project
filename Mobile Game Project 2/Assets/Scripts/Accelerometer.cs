@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Accelrometer : MonoBehaviour
+public class Accelerometer : MonoBehaviour
 {
     public bool isFlat = true;
     private Rigidbody rigid; //for the object rigidbody
