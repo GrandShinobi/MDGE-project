@@ -13,7 +13,6 @@ public class CanvasManager : MonoBehaviour
     
     public GameObject gameOverUI;
 
-    string HelloWorld;
 
     private int level = 0;
     private int controlSelect; //what control options did the player use?
@@ -86,7 +85,7 @@ public class CanvasManager : MonoBehaviour
         return controlSelect;
     }
 
-   
+
     public void LevelSelection(string levelname) { SceneManager.LoadScene(levelname); }
 
     public void QuitGame() { Application.Quit(); }

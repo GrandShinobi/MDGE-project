@@ -863,11 +863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-<<<<<<< HEAD
   m_AnchoredPosition: {x: 898, y: -5}
-=======
-  m_AnchoredPosition: {x: 852, y: -5}
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &488907992
@@ -1226,11 +1222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.48896107, y: 0.0000005662441, z: -0.00000017881393, w: 0.87230563}
-<<<<<<< HEAD
   m_LocalPosition: {x: 1.6270033, y: 11.451427, z: -8.297861}
-=======
-  m_LocalPosition: {x: -0.755, y: 11.451, z: -8.298}
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2167,7 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5314e772ccd4b684397f2cc3c3a161fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 0}
+  endScreen: {fileID: 283748178}
   Player: {fileID: 191285573}
   powerUpduration: 6
 --- !u!114 &1178795701
@@ -2692,20 +2684,12 @@ PrefabInstance:
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-<<<<<<< HEAD
       value: -99
-=======
-      value: -121
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-<<<<<<< HEAD
       value: -95
-=======
-      value: -118
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
@@ -2941,7 +2925,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875231585}
   m_Layer: 0
-  m_Name: Boundary Walls
+  m_Name: Boundry Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
@@ -3597,20 +3581,12 @@ PrefabInstance:
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-<<<<<<< HEAD
       value: -97
-=======
-      value: 26
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
       objectReference: {fileID: 0}
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-<<<<<<< HEAD
       value: 33
-=======
-      value: 31
->>>>>>> 2c147979f63eb25cb322252158a2bc776b585eb5
       objectReference: {fileID: 0}
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}
