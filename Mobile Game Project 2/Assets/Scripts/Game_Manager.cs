@@ -32,9 +32,12 @@ public class Game_Manager : MonoBehaviour
 
      updateUI.UpdateCoinsLeft(); //set grand total coins left
 
-        
-         int type;
-        
+        /*Error in Unity
+         NullReferenceException: Object reference not set to an instance of an object
+    Game_Manager.Start()(at Assets / Scripts / Game_Manager.cs:38)
+
+        int type;
+
         type = controltype.checkSelectedControls();
         print("Type is " + type);
 
@@ -50,7 +53,7 @@ public class Game_Manager : MonoBehaviour
                 print("Selection 3");
                 break;
         }
-
+        */
     }
 
     // Update is called once per frame

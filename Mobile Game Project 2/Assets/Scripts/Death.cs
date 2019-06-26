@@ -24,6 +24,7 @@ public class Death : MonoBehaviour
         {
             player.gameObject.SetActive(false);
             print("object collided death is here");
+            Handheld.Vibrate();
           
         }
         if (collider.gameObject.CompareTag("Coins"))
