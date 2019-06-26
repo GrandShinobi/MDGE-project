@@ -10,7 +10,8 @@ public class Trigger_Checkers : MonoBehaviour
    
     int point =0; //number of coins picked up.
     bool isPoint = false;
-    bool power_up = false; //
+    bool power_up = false;
+    bool isDead = false;
     // Start is called before the first frame update
 
 
@@ -25,6 +26,7 @@ public class Trigger_Checkers : MonoBehaviour
 
         if (collider.gameObject.CompareTag("Enemy") && power_up == false) //when player touches enemy, dies by SetActive false for now. 
         {
+            isDead = true;
             player.gameObject.SetActive(false);
             
 
@@ -72,6 +74,10 @@ public class Trigger_Checkers : MonoBehaviour
     {
         power_up = state;
     }
+    public bool isDeadState()
+    {
+      return   isDead;
+    }
 
-    
+
 }

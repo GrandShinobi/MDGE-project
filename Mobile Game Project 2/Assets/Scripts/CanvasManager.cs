@@ -5,20 +5,24 @@ using UnityEngine;
 
 public class CanvasManager : MonoBehaviour
 {//This canvas creates a simpleton which guides canvas through all scenes
-   private static CanvasManager Instance;
+    private static CanvasManager Instance;
 
     public GameObject pauseMenuUI;
-   public GameObject pauseButtonUI;
-   public GameObject mainMenuUI;
-    public GameObject scoreMenuUI;
-    private int level = 0;
+    public GameObject pauseButtonUI;
+    public GameObject mainMenuUI;
+    
+    public GameObject gameOverUI;
 
-   private void Awake()
+
+    private int level = 0;
+    private int controlSelect; //what control options did the player use?
+
+    private void Awake()
     {
         if (Instance != null)
         {
             Destroy(gameObject);
-            
+
         }
         else
         {
@@ -27,27 +31,28 @@ public class CanvasManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-   
 
-    public  void UpdateLevelChange(int level)
+
+    public void UpdateLevelChange(int level)
     {
         if (level != 0)
         {
             mainMenuUI.SetActive(false);
             pauseButtonUI.SetActive(true);
-            scoreMenuUI.SetActive(true);
+           
         }
         else
         {
             mainMenuUI.SetActive(true);
             pauseButtonUI.SetActive(false);
-            scoreMenuUI.SetActive(false);
+           
             pauseMenuUI.SetActive(false);
         }
 
     }
 
-    public void OPTIONSUpdateLevelChange()
+    public void OPTIONSUpdateLevelChange() //New 1 use this one, use on buttons that will change scenes only! And must use it!
+
     {
         //Note: Turning off option page is already set in Option buttion using Unity setactive.
         if (SceneManager.GetActiveScene().name == "Start Menu" && mainMenuUI.activeSelf == false) //in menu and menuPage is turned off
@@ -64,6 +69,28 @@ public class CanvasManager : MonoBehaviour
         }
     }
 
+    public  void setGameOverScreen()
+    {
+        gameOverUI.SetActive(true);
+    }
+
+    public void updateSelectedControls(int selection )
+    {
+        print("selected control is " + selection);
+        controlSelect = selection;
+    }
+
+    public int checkSelectedControls()
+    {
+        return controlSelect;
+    }
+
+
+    public void LevelSelection(string levelname) { SceneManager.LoadScene(levelname); }
+
+    public void QuitGame() { Application.Quit(); }
+
+    public void ReloadScene() { SceneManager.LoadScene(SceneManager.GetActiveScene().name); pauseMenuUI.SetActive(false); }
     /*-----------------------------Rmb to use active scenes to check for loaded scene in next code revision
      *  Current build, uses a in class integer to keep track of scene change which will not be very good when there
      *  are multiple methods to switch scenes that are not all functioning in the class.
