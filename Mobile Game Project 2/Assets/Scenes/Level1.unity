@@ -863,7 +863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 898, y: -5}
+  m_AnchoredPosition: {x: 852, y: -5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &488907992
@@ -1222,7 +1222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.48896107, y: 0.0000005662441, z: -0.00000017881393, w: 0.87230563}
-  m_LocalPosition: {x: 1.6270033, y: 11.451427, z: -8.297861}
+  m_LocalPosition: {x: -0.755, y: 11.451, z: -8.298}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2159,7 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5314e772ccd4b684397f2cc3c3a161fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScreen: {fileID: 283748178}
+  endScreen: {fileID: 0}
   Player: {fileID: 191285573}
   powerUpduration: 6
 --- !u!114 &1178795701
@@ -2684,12 +2684,12 @@ PrefabInstance:
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -99
+      value: -121
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -95
+      value: -118
       objectReference: {fileID: 0}
     - target: {fileID: 3881087803549984436, guid: ec536a7718376554185e4a856d5ae230,
         type: 3}
@@ -3581,12 +3581,12 @@ PrefabInstance:
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -97
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 33
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 6103916916604405227, guid: f9a98de12c15a9a428730a84b1ebd19e,
         type: 3}

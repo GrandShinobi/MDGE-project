@@ -23,7 +23,7 @@ public class ChasePlayer : MonoBehaviour
 
     }
 
-    private void hasePlayer()
+    private void chasePlayer()
     {
         enemy.SetDestination(player.transform.position);
     }
